@@ -38,6 +38,8 @@
   - using addons that use the sidebar (for example firefox side view) can be awekward
   - might not work well depending on your window controls
 */
+/* ** make window buttons like macOS */
+@import url('opt/mac_buttons.css'); 
 
 :root { /* ## main settings */
   /* ** width of the sidebar when opened */
@@ -59,6 +61,7 @@
   
   /* ** color of the border around the page and sidebar overlay */
   --brdr-col: #fafafa30;
+  --brdr-col: transparent;
   /* ** color of the shadow around the sidebar overlay */
   --shdw-col: #00000020;
 
@@ -66,7 +69,7 @@
         don't want a border around the page
   */
   --page-brd-col: var(--brdr-col);
-  /* --page-brd-col: transparent; */
+  --page-brd-col: transparent;
 
   --page-shd-col: var(--shdw-col);
   /* --page-shd-col: transparent; */
@@ -78,7 +81,7 @@
 /* ** WINDOWS - makes the window buttons less huge 
    // uncomment <win: from here> if you're on Windows.
 */
-/*
+
 .titlebar-buttonbox {
   margin-right: calc(var(--page-pad) * 1.5);
   margin-top: calc(var(--page-pad) * 0.5);
@@ -94,7 +97,7 @@
 :root {
   --wbtn-wdt: 6.5rem;
 }
-*/
+
 /* <win: to here> */
 
 /* ## clean up
@@ -153,8 +156,7 @@
      some imports might only work at the end of the file
 */
 
-/* ** make window buttons like macOS */
-/* @import url('opt/mac_buttons.css');  */
+
 
 /* ## layout set up */
 
